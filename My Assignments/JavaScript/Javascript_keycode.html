@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <head>
+    <title>My First Page</title>
+ <script>   
+   document.onkeydown = testKeyCode;
+   var keycode;
+   function testKeyCode(e) {
+      if(window.event) {
+        keycode = window.event.keyCode;
+        //alert('key pressed: '+keycode);
+      }
+      if(e.altKey && keycode == 72){
+        //alert('alt key + H pressed');
+        document.getElementById("mylink").click();
+      }
+   }
+ </script>
+  </head>
+  <body>
+ <h1>Welcome to my home page</h1>
+  <a id="mylink" href="Javascript_prototype.html">Click here</a>
+    <h6>Copyright @Ranjani </h6>
+  </body>
+</html>

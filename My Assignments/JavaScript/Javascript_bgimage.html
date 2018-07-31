@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <head>
+    <title>My First Page</title>
+<!-- latest javascript 1.8.5 -->
+ <script>
+    function setBg(val){
+        document.body.style.background="url("+val+")";
+    }    
+ </script>
+  </head>
+  <body onload="setBg('cloud.jpg')">
+ <h1>Change background</h1>
+<select name="mypic" required onchange="setBg(this.value)">
+  <option value="" default>Select Image</option>
+  <option value="bridge.jpg">Bridge</option>
+  <option value="periyar.jpg">River</option>
+  <option></option>
+</select>
+
+    <h6>Copyright @Ranjani </h6>
+  </body>
+</html>

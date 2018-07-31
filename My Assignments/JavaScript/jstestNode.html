@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Javascript error test</title>
+   <script>
+       function tryNew() {
+          var para = document.createElement("p");
+          var node = document.createTextNode("Tiger");
+          para.appendChild(node);
+          var divElement = document.getElementById("divAnimal");
+          var child = document.getElementById("idCamel");
+          divElement.insertBefore(para, child);
+          //divElement.appendChild(para);
+       }
+       function removeVal(val) {
+          var divElement = document.getElementById("divAnimal");
+          //alert(val);
+          var child = document.getElementById(val);
+          //alert(child);
+          //alert(event.target);
+          event.target.disabled=true;
+          divElement.removeChild(child);
+       }
+       function replaceVal(val1, val2) {
+          var divElement = document.getElementById("divAnimal");
+          var child1 = document.getElementById(val1);
+          var child2 = document.getElementById(val2);
+          divElement.replaceChild(child1,child2);
+          event.target.disabled=true;
+       }
+   </script>	
+</head>
+<body onload="tryNew()">
+  <div id="divAnimal">
+    <p id="idCamel">Camel</p>
+    <p id="idElephant">Elephant.</p>
+  </div>
+ <br><input type="button" value="remove camel" 
+                                onclick="removeVal('idCamel')" />
+ <br><input type="button" value="remove Elephant" 
+                                onclick="removeVal('idElephant')" />
+ <br><input type="button" value="replace camel with elephant" 
+                                onclick="replaceVal('idElephant','idCamel')" />
+</body>
+</html>

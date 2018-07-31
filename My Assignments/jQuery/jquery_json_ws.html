@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-1.5.1.min.js">
+        </script>
+        <script type="text/javascript">
+              $(document).ready(
+                 function() {
+                   $.ajax( {
+                         url: "http://rest-service.guides.spring.io/greeting"
+                    }).then (
+                        function(data) {
+	      //alert(data);
+                        $('.greeting-id').append(data.id);
+                        $('.greeting-content').append(data.content);
+                       } );
+                 } );       
+        </script>
+    </head>
+    <body>
+         <!--
+         <div>
+            <p class="greeting-id">The ID is </p>
+            <p class="greeting-content">The content is </p>
+         </div>
+         -->
+<table border="1">
+   <tr><td>ID<td class="greeting-id">
+   <tr><td>Content<td class="greeting-content">
+</table>
+    </body>
+</html>
+<!-- 
+http://rest-service.guides.spring.io/greeting URL to RESTful web service returns json object,
+which if successful, populated into data. id and content are inserted into <td>
+-->

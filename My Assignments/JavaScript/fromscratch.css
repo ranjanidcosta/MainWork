@@ -1,0 +1,18 @@
+body
+{
+border: 20px solid #bdc3c7;
+margin: 20px auto;
+max-width: 700px;
+width: 80%
+padding: 20px;
+
+} 
+
+p{
+font-family: "Source Sans Pro";
+}
+
+h3{
+font-family: "Source Sans Pro";
+font-weight: 700px;
+}

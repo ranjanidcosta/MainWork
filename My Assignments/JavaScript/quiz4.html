@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Tags</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label for="fstname"></label>
+		FirstName:<input id="fstname" type="text" name="firstname" placeholder="John" required>
+		<label for="lstname:"></label>
+		LastName:<input id="lstname" type="text" name="lastname" placeholder="Smith" required>
+		<br>
+		<label for="male">Male</label>
+		<input id="male" type="radio" name="Gender" value="male">
+		<label for="female">Female</label>
+		<input id="female" type="radio" name="Gender" value="female">
+		<label for="other">Other</label>
+		<input id="other" type="radio" name="Gender" value="other">
+		<br>
+		<label for="email"></label>
+		Email:<input id="email" type="email" name="emailid" placeholder="your mail" required>
+		<label for="password"></label>
+		Password<input id="password" type="password" name="pwd" placeholder="your password" required>
+		<br>
+		<label>
+		Birthday:
+		<select>
+			<option>month</option>
+			<option value="jan">jan</option>
+			<option value="feb">feb</option>
+			<option value="mar">mar</option>
+		</select>
+		<select>
+			<option>day</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select>
+			<option>year</option>
+			<option value="1985">1985</option>
+			<option value="1986">1986</option>
+			<option value="1987">1987</option>
+		</select>
+		</label>
+		<br>
+		I agree to the terms and conditions
+		<input type="checkbox" name="tandc" required>
+	<!--	<input type="submit" value="Submit">-->
+		<br>
+		<button>Submit</button>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+   <head>
+      <title>Centering table</title>
+      <script src="jquery-1.5.1.min.js"> 
+      </script>
+      <script>
+         function reSize() {
+             topMargin = ($(document).height() - $("#tabdiv").height()) / 2;
+             $('#tabdiv').css('margin-top', topMargin); 
+         }
+      </script>
+      <style>
+        td {
+          vertical-align: center;
+          text-align: center;
+          height:40px;
+          padding:5px;
+        }
+        table {
+          border: 1px solid;
+          border-collapse: collapse;
+          margin: 0 auto;
+          align-self: center; 
+        }
+        th, td {
+          border: 1px solid;
+        }
+        caption {
+           font-size:25px;
+           color:blue;
+        }
+      </style>
+   </head>
+<body onload="reSize()" onresize="reSize()">
+ <div id="tabdiv">   
+   <table>
+        <caption>Employee</caption>
+        <th>S No</th><th>Name</th><th>Salary</th>
+        <tr><td>E01</td><td>Ajit</td><td>&#8377; 30,000</td>
+        <tr><td>E02</td><td>Beena</td><td>&#8377; 25,000</td>
+   </table><br>   
+   <table>
+        <caption>Department</caption>
+        <th>S No</th><th>Dept</th><th>Location</th>
+        <tr><td>D01</td><td>Admin</td><td>Mumbai</td>
+        <tr><td>D02</td><td>IT</td><td>Bangalore</td>
+   </table>
+ </div>
+</body>
+</html>

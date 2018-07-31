@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>
+    <title>jquery anim</title>
+<! script src="jquery-1.12.3.min.js"> 
+<script src="https://code.jquery.com/jquery-1.12.4.min.js">
+ </script>
+  <script>
+    function showBox() {
+       $('#box1').html("<b>Welcome to jQuery</b>").fadeIn(3000);
+    }
+    function hideBox() {
+       $('#box1').html("<b>Thanks. Goodbye</b>").fadeOut(3000);
+    }
+  </script>
+  </head>
+  <body>
+ <h1>jQuery Animation</h1>
+<a href="javascript:void(0);" onclick="showBox()">Show</a>
+<a href="javascript:void(0);" onclick="hideBox()">Hide</a>
+<br>
+<div id="box1" style="padding:50px; background-color:cyan; text-align:center; width:200; display:none">Welcome to jQuery</div>
+
+
+    <h6>Copyright @Ranjani </h6>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Testing geo location</title>
+</head>
+<body>
+<input type="button" value="Click Me" onclick="getLocation()" name="">
+<p id="demo"></p>
+<script type="text/javascript">
+   var x = document.getElementById("demo");
+   function getLocation() {
+      //alert("getLocation..");
+      if(navigator.geolocation) {
+         navigator.geolocation.getCurrentPosition(showPosition, showError);
+      }
+      else {
+         x.innerHTML = "geolocation not supported";
+      }
+   }
+
+   function showPosition(position) {
+      //alert("show position..");
+      x.innerHTML = "Pos: "+position.coords.latitude +", "+ position.coords.longitude;
+   }
+   function showError(error) {
+      //alert("show error..");
+      x.innerHTML = "Err: "+error.code;
+   }
+</script>
+</body>
+</html>

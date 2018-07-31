@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+  <head>
+	<title> Assignment 3 </title>
+	<style>
+	
+	td.t01 {
+		text-align: center;
+		background-color:powderblue;
+		}
+	td#t02 {
+		text-align: left;
+		background-color:powderblue;}
+  	</style>
+	</head>
+  <body>
+  <form>
+  <table border="1" align="center" width="70%" >
+	<tr>
+	<td class="t01"><b>Name</b></td>
+	<td id="t02">
+	<input type="text" name="InputName" placeholder="Enter your name" required></td>
+	</tr>
+	<td class="t01"><b>Employee Code</b></td>
+	<td id="t02">
+	<input type="text" name="InputEmpCode" size="10"></td>
+	</tr>
+	<tr>
+	<td class="t01"><b>Department</b></td>
+	<td id="t02">
+	<input type="radio"
+		name="department" value="Admin">Admin<br> 
+	<input type="radio"
+		name="department" value="HR">HR<br> 
+	<input type="radio"
+		name="department" value="Technical">Technical<br> 
+	<input type="radio"
+		name="department" value="Accounts">Accounts
+	</td>
+	</tr>
+	<tr>
+	<td class="t01"><b>Date of joining</b></td>
+	<td id="t02">
+		<input id="date" type="date"></td>
+	</tr>
+	<tr>
+	<td class="t01"><b>Date of Birth</b></td>
+	<td id="t02">
+		<input type="number" placeholder="dd" min="1" max="31" size="3">&nbsp;<input type="number" placeholder="mm" min="1" max="12" size="3">&nbsp;<input type="number" placeholder="yyyy" min="1990" max="2000" size="4"></td>
+	</tr>
+	<tr>
+	<td class="t01"><b>Address<b></td>
+	<td id="t02">
+	<textarea name="address" rows="8" columns="30">
+	</textarea>
+	</td>
+	</tr>
+	<tr>
+	<td class="t01"><b>Training program attented</b></td>
+	<td id="t02">
+	<input type="checkbox"
+		name="PgmAttended" value="HTML">HTML/DHTML<br>
+	<input type="checkbox"
+		name="PgmAttended" value="Java">Java<br>
+	<input type="checkbox"
+		name="PgmAttended" value="Client Server">Client 	Server<br>
+	<input type="checkbox"
+		name="PgmAttended" value="net">.Net<br>
+	</td>
+	</tr>
+	<tr>
+	<td class="t01"><b>Training program need to attend</b></td>
+	<td id="t02">
+	<select name="PgmToAttend">
+		<option value="Java">Java</option>
+		<option value="HTML">HTML/DHTML</option>
+		<option value="Client Server">Client Server</option>
+		<option value="net">.Net</option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td class="t01"><b>Send this information at</b></td>
+	<td id="t02"><i>&nbsp;&nbsp;empinfo@gmail.com<i></td>
+	</tr>
+        <tr>
+         <td class="t01" colspan="2" align="center"><input type="submit" value="submit" /></td>
+       </tr>
+  </table>
+ </form>
+  </body>
+</html>

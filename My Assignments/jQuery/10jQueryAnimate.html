@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <head>
+    <title>jquery anim</title>
+<! script src="jquery-1.12.3.min.js"> 
+<script src="https://code.jquery.com/jquery-1.12.4.min.js">
+ </script>
+  </head>
+  <body>
+ <h1>jQuery Animation</h1>
+<div id="box1" style="padding:50px; background-color:#89BC78; text-align:center; width:150px; height:150px; position:absolute"></div>
+  <script>
+    $(function(){
+       $('#box1').animate({"left":"350px"},5000,function(){
+           $(this).animate({"left":"50px"},5000,function(){
+               $(this).animate({"left":"450px"},3000);
+           });
+       });
+    });
+  </script>
+
+
+    <h6>Copyright @Ranjani </h6>
+  </body>
+</html>

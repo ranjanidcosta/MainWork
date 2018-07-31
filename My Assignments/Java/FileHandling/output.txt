@@ -1,0 +1,6 @@
+Hi there!Hi there!
+This second line
+File IO is easy
+Hi there!Hi there!
+This second line
+File IO is easy

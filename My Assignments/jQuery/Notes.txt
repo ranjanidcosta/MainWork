@@ -1,0 +1,37 @@
+jQuery:
+
+ - fast and concise Javascript library created by John Resig in 2006
+ - simplifies HTML document traversing event handling, animating and AJAX interactions
+
+1. Selector : $()  OR jQuery()
+ This is a factory function and can have three tags:
+  $('p') : select all p tags
+  $('#myid') : select element with id 'myid'
+  $('.myclass') : select all elements having class 'myclass'
+
+2. The library .js file : jquery-1.12.3.min
+  min : minified, no comments
+ uncompressed : with comments
+CDN : https://code.jquery.com/jquery-1.12.4.min.js
+Content Delivery Network
+(http://ajax/googleapis.com)
+(microsoft)
+
+3. $('#div1').text('Hello Friends');
+   $('#div1').append(' Welcome to my page');
+   $('#div1').html('<h3>Hello</h3>');
+
+4. All jQuery code should be written inside:
+  $(document).ready() function
+This ensures that all events etc., are added as soon as the DOM is loaded before page contents are loaded
+$(document).ready(
+   function() {
+     $('#div1').text('Hello Friends');
+   }
+);
+
+5. callback
+ A plain javascript function passed as an argument to any fuction.
+$('body').click(function(event){
+  alert('clicked '+ event.target);
+});

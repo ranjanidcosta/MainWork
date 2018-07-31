@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <head>
+    <title>My First jquery page</title>
+ <script> 
+ 
+   function show() {
+     $(document).ready(
+       function(){
+         $.ajax({url:'http://api.openweathermap.org/data/2.5/weather?q='+$("#city").val()+','+$("#country").val()+'&appid=55da126c079391048f1d97308740e1b9'}).then(
+   function(data){
+     $('#mydiv').text(data.weather[0].main+', '+data.weather[0].description+', City: ' + data.name);
+   }, function(){
+     $('#mydiv').text('ws call failed');
+   }
+         );
+       }
+     );
+   }
+       
+ </script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js">
+ </script>
+  </head>
+  <body>
+ <h1>Weather from ajax call</h1>
+ City<input type="text" id="city" value="">
+ <br>
+ Country<input type="text" id="country" value="">
+ <input type="button" id="click" value="Click" onClick="show()">
+ <div id="mydiv"></div>
+    <h6>Copyright @Ranjani </h6>
+<!-- AJAX: Asynchronous Javascript And Xml,
+  JSON : JavaScript Object Notation
+ -->
+  </body>
+</html>

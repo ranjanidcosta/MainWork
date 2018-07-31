@@ -1,0 +1,24 @@
+<html>
+  <head>
+       <title>This is a test document</title>
+      <script type="text/javascript" src="test2.js">
+      </script>
+  </head>
+  <body>
+ <br /><br />
+   Enter a Palindrome: <input type="text" id="intxt" value="" />
+  <br />
+  <input type="button" id="btn1" value="Check Palindrome" onClick="alert(intxt.value+' palindrome? '+isPalindrome(intxt.value))" />
+  <br />
+  <input type="button" id="btn2" value="Check 5 digits" onClick="alert(intxt.value+' is 5 digits? '+isFiveDigits(intxt.value))" />
+  <br />
+  <input type="button" id="btn3" value="Check Proper Case" onClick="alert(intxt.value+' is Proper Case? '+isPropercase(intxt.value))" />
+  <br />
+  <input type="text" id="ttx2" onblur="alert(' is pswd valid? '+isProperPswd(intxt.value))" />
+  <br />
+  <input type="button" id="btn4" value="To Proper Case" onClick="alert(intxt.value+' to Upper Case : '+toTitleCase(intxt.value))" />
+  <br />  <br />  <br />
+  <input type="button" id="btn5" value="<-- Previous " onClick="history.back()" />
+
+  </body>
+</html>

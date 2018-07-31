@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <title>jQuery Test - 9</title>
+      <script type="text/javascript" src="jquery-1.5.1.min.js"> 
+      </script>
+      <style>
+       .custom {
+           color:red;
+           background:yellow;
+           font-size:20pt;
+           font-weight:bold
+       }
+     </style>
+   </head>
+<body>
+<table border="0">
+<td colspan="2" align="center">
+           <input id="clickbtn" type="button" value="Click Event">
+</td>
+<tr><td>&nbsp;
+<tr>
+<td><input id="attachbtn" type="button" value="Attach Event"></td>
+<td><input id="detachbtn" type="button" value="Detach Event"></td>
+</table>
+   <script>
+   $(document).ready(function(){      
+      $('#attachbtn').bind('click',function(){
+         $('#clickbtn').bind('click',activatebtn);
+        // $('#clickbtn').css({"color":"red"});
+        $('#clickbtn').addClass('custom');
+      });
+      $('#detachbtn').bind('click',function(){
+         $('#clickbtn').unbind('click');
+         //$('#clickbtn').css({"color":"black"});
+        $('#clickbtn').removeClass('custom');
+      });
+        function activatebtn(){
+           alert('Hello, I am active');
+        }
+      } );
+     </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+25/11/2017 AM INFO main com.ranjani.dao.BankingDaoImplSQL - init()
+25/11/2017 AM INFO main com.ranjani.dao.BankingDaoImplSQL - init()
+25/11/2017 AM INFO main com.ranjani.dao.BankingDaoImplSQL - init()
+25/11/2017 AM INFO main com.ranjani.dao.BankingDaoImplSQL - init()
+25/11/2017 AM FATAL main com.ranjani.util.DBUtil - java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+25/11/2017 AM INFO main com.ranjani.dao.BankingDaoImplSQL - init()
+25/11/2017 AM FATAL main com.ranjani.util.DBUtil - java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+25/11/2017 AM INFO main com.ranjani.dao.BankingDaoImplSQL - init()
+25/11/2017 AM INFO main com.ranjani.dao.BankingDaoImplSQL - deposit amount, 2345, 2350.0
+25/11/2017 AM INFO main com.ranjani.dao.BankingDaoImplSQL - deposit success, bal: 6850.0

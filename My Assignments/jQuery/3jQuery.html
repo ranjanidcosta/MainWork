@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <head>
+    <title>My First jquery page</title>
+ <script> 
+   function show() {
+     $(document).ready(
+       function(){
+         $("#mytxt").blur(function(event){
+              //alert('clicked '+event.target.value);
+            var val1 = event.target.value;
+              //$("#mydiv").html(event.target.value)
+              $("#mydiv").append($("#mytxt").val()+" ")
+              .css("color","red");
+              $("#mytxt").val("");
+              $("#mybtn").trigger("click");
+         });
+       }
+     );
+   }
+       function check(){
+         alert('mybtn clicked');
+       }
+ </script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js">
+ </script>
+  </head>
+  <body  onload = "show()">
+ <h1>Welcome to jQuery</h1>
+<input type="button" value="Click" id="mybtn" onclick="check()"/>
+<br>
+<select type="text" value="clickme">
+  <option>element1</option>
+  <option>element2</option>
+  <option>element3</option>
+</select>
+<br> <label id="lbl1">A jQuery training </label>
+<br><input type="text" id="mytxt" value="" />
+<br> <div id="mydiv">Output: </div>
+    <h6>Copyright @Ranjani </h6>
+  </body>
+</html>
